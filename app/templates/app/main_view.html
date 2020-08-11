@@ -1,0 +1,158 @@
+{% load static %}
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'app/style.css' %}">
+    <title>My News</title>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <div class="row justify-content-center header">
+                <div class="col-lg-3">
+                    <h2>World News </h2>
+                </div>
+                <div class="col-lg-5">
+                    <form action="search.html" class="form form-inline"> 
+                      <div class="form-group mx-sm-3 ">
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Поиск">
+                      </div>
+                      <button type="submit" class="btn btn-primary ">Поиск</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+      
+    </header>
+
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="headline"><span><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-globe-3.png&r=0&g=0&b=0" width="50px" alt=""></span> Мировые новости:</h1>
+            <div class="col-lg-12">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="https://www.prnewswire.com/content/dam/prnewswire/common/prn_facebook_sharing_logo.jpg"  class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Komainu Custody Solution to Safeguard XBT Provider's Digital Assets</h5>
+                      <p class="card-text">"STOCKHOLM, Aug. 4, 2020 /PRNewswire/ -- CoinShares today announced that Komainu, a digital asset custody business for institutional investors, will serve as the custodian of all digital assets held by CoinShares Capital Markets including those used to physica…"</p>
+                      <a href="https://www.prnewswire.com/news-releases/komainu-custody-solution-to-safeguard-xbt-providers-digital-assets-301105563.html" class="card-link read">Читать</a>
+                      <a href="#" class="card-link source ml-5">PRNewswire</a>
+                      <a class="card-link date ml-5">2020-08-04T12:38:00Z</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-outline-primary mb-5 mt-5">Еще показать</button>
+          </div>
+        </div>
+                    <div class="col-lg-4  ">
+            <div class="list-group category-list">
+              <a href="#" class="list-group-item list-group-item-action active"><span><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-globe-3.png&r=0&g=0&b=0 " width='19px' alt=""></span>Мир</a>
+              <a href="#" class="list-group-item list-group-item-action"><span><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2013/png/iconmonstr-flag-3.png&r=0&g=0&b=0" width='19px' alt=""></span>Россия</a>
+              <a href="#" class="list-group-item list-group-item-action"><span><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-chart-6.png&r=0&g=0&b=0" width='19px' alt=""></span>Бизнес</a>
+              <a href="#" class="list-group-item list-group-item-action"><span><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2017/png/iconmonstr-school-18.png&r=0&g=0&b=0" width='19px' alt=""></span>Наука и техника</a>
+              <a href="#" class="list-group-item list-group-item-action"><span><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2019/png/iconmonstr-party-21.png&r=0&g=0&b=0" width='19px' alt=""></span>Развлечения</a>
+              <a href="#" class="list-group-item list-group-item-action"><span><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2018/png/iconmonstr-soccer-1.png&r=0&g=0&b=0" width='19px' alt=""></span>Спорт</a>
+              <a href="#" class="list-group-item list-group-item-action"><span><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2017/png/iconmonstr-medical-1.png&r=0&g=0&b=0" width='19px' alt=""></span>Здровье</a>
+            </div>
+
+            <div class="card weather">
+              <div class="card-header">
+                <span><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2016/png/iconmonstr-weather-5.png&r=0&g=0&b=0" width="19px" alt=""></span> Погода в Оренбурге
+              </div>
+
+              <div class="card-body">
+                <h6>Переменная облачность</h6>
+                <h4>23°С</h4>
+                <hr>
+                <div class="row justify-content-center">
+                  <div class="col weather-data">
+                    <p>сб</p>
+                    <p>27°С</p>
+                    <p class="text-muted">13°С</p>
+                  </div>
+                  <div class="col weather-data">
+                    <p>вс</p>
+                    <p>27°С</p>
+                    <p class="text-muted">12°С</p>
+                  </div>
+                  <div class="col weather-data">
+                    <p>пн</p>
+                    <p>27°С</p>
+                    <p class="text-muted">12°С</p>
+                  </div>
+                  <div class="col weather-data">
+                    <p>вт</p>
+                    <p>27°С</p>
+                    <p class="text-muted">12°С</p>
+                  </div>
+                  <div class="col weather-data">
+                    <p>ср</p>
+                    <p>28°С</p>
+                    <p class="text-muted">14°С</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card weather">
+              <div class="card-header">
+                <span><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2013/png/iconmonstr-coin-10.png&r=0&g=0&b=0" width="19px" alt=""></span> Курс валют
+              </div>
+
+              <div class="card-body">
+                <table class="table ">
+                  <thead>
+                    <tr>
+                      <th scope="col">Валюта</th>
+                      <th scope="col">Курс</th>
+                      <th scope="col">Изменения</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Евро</th>
+                      <td>83.1013</td>
+                      <td class="text-success">+0.9640</td>
+                    </tr>
+                    <tr>
+                      <th>Доллар</th>
+                      <td>71.5974</td>
+                      <td class="text-success">+0.6344</td>
+                    </tr>
+                    <tr>
+                      <th>Юань</th>
+                      <td>102.0330</td>
+                      <td class="text-success ">+0.6090</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+    </section>
+
+    <section class="footer">
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
